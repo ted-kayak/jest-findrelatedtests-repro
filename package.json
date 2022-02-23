@@ -1,0 +1,15 @@
+{
+  "name": "jest-findrelatedtests-repro",
+  "version": "1.0.0",
+  "description": "Minimal repro for Jest not exiting with code 1 with no tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest; echo $?",
+    "test:related": "jest --findRelatedTests foo/Bar.tsx; echo $?" 
+  },
+  "author": "ted@kayak.com",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
